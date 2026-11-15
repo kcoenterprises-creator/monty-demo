@@ -12,7 +12,7 @@
       "step": "installTheme",
       "themeData": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/Ykcoenterprises-creator/mony-demo/main/monystyles.zip"
+        "url": "https://raw.githubusercontent.com/kcoenterprises-creator/mony-demo/main/monystyles.zip"
       },
       "options": { "activate": true }
     },
