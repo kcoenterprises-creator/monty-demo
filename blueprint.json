@@ -1,0 +1,24 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "features": { "networking": true },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": { "blogname": "Mony Styles", "blogdescription": "Keratin, balayage and hair extensions in Luton" }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/kcoenterprises-creator/monty-demo/main/monystyles.zip"
+      },
+      "options": { "activate": true }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; if ( function_exists( 'mony_activate' ) ) { mony_activate(); } flush_rewrite_rules();"
+    }
+  ]
+}
